@@ -1,0 +1,28 @@
+@mixin container() {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 44px 0 28px 0;
+    &__container {
+        @include container();
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__btn {
+        background-color: rgba(#ffffff, 0);
+        padding: 0;
+    }
+    &__nav {
+        width: 100%;
+    }
+}
