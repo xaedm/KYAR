@@ -1275,6 +1275,7 @@ a {
   }
   .footer__tour {
     width: 100%;
+    margin-left: 0;
   }
   .footer__tour :nth-child(2) {
     margin-top: 23px;
