@@ -1,0 +1,116 @@
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-color: #305F64;
+    color: white;
+    p {
+        font-size: 18px;
+        font-family: DM Sans;
+    }
+    &__container {
+        @include container();
+    }
+    &__main {
+        padding: 100px 0 42px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__tour {
+        margin-left: 154px;
+        margin-right: 103px;
+        width: 9.5%;
+        :first-child {
+            width: 80%;
+        }
+        :nth-child(2) {
+            margin-top: 0;
+        }
+    }
+    &__company {
+        margin-right: 108px;
+        width: 35%;
+    }
+    &__follow {
+        display: flex;
+        gap: 15px;
+        :nth-child(3) {
+            background-color: #305F64;
+        }
+        margin-top: 20px;
+    }
+    &__p1 {
+        margin-bottom: 40px;
+        margin-top: 24px;
+        line-height: 26px;
+    }
+    &__p2 {
+        margin-top: 23px;
+    }
+    &__h3 {
+        margin-top: 3px;
+    }
+    &__dudeshape {
+        display: flex;
+        flex-direction: column;
+        width: 26%;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+        font-size: 18px;
+        margin-top: 23px;
+    }
+    &__item {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 72px;
+        &:last-child {
+            margin-right: 0;
+        }
+        font-family: DM Sans;
+    }
+    &__btn {
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        @include center();
+    }
+    &__input {
+        width: 218px;
+        border: none;
+        padding: 16px 12px 13px 22px;
+        margin-top: 42px;
+        &::placeholder {
+            color: #859395;
+            font-size: 16px;
+        }
+    }
+    &__box {
+        position: relative;
+    }
+    &__arrow {
+        width: 28px;
+        height: 28px;
+        background-color: #FFB624;
+        @include center();
+        position: absolute;
+        right: 12px;
+        bottom: 9px;
+        &:hover {
+            background-color: darken(#FFB624, 10%);
+        }
+    }
+    &__end {
+        border-top: 1px solid #407980;
+        text-align: center;
+        padding: 20px;
+        p {
+            margin-top: 0;
+        }
+    }
+}
